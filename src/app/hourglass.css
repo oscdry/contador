@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .hourglassContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hourglass {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50px;
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .sandTop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #d4af37;
+    transition: height 1s linear;
+  }
+  
+  .sandBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: #d4af37;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
