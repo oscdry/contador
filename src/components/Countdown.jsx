@@ -37,7 +37,7 @@ export default function Countdown({ targetDate }) {
   };
 
   const calculateInitialSeconds = () => {
-    const start = new Date('2024-05-20'); 
+    const start = new Date('2024-06-20'); 
     const target = new Date(targetDate);
     return Math.floor((target - start) / 1000);
   };

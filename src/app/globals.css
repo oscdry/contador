@@ -69,3 +69,54 @@ h2 {
   width: 0%;
   border-radius: 5px;
 }
+
+.todo-list {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  position: relative;
+}
+
+.todo-item.completed {
+  background-color: #e0ffe0;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.trophy-icon {
+  color: gold;
+  margin-left: auto;
+  animation: bounceIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
